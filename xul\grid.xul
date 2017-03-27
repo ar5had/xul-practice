@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Grid" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<grid flex="1">
+ <columns>
+  <column flex="1" />
+  <column flex="10" />
+ </columns>
+ <rows>
+  <row flex="12">
+    <button label="Sidebar"/>
+    <button label="Main interface"/>
+  </row>
+  <row>
+    <button label="Imagine"/>
+    <button label="Information line"/>
+  </row>
+ </rows>
+</grid>
+
+
+</window>

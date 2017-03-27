@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="tabbox" title="Tabbox"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<tabbox>
+  <tabs>
+    <tab label="Page 1" />
+    <tab label="Page 2" />
+  </tabs>
+  <tabpanels>
+    <tabpanel id="first">
+        <textbox value="First page" rows="25" cols="80" multiline="true"></textbox>
+    </tabpanel>
+    <tabpanel id="second">
+      <textbox value="Second page" rows="25" cols="80" multiline="true"></textbox>
+    </tabpanel>
+  </tabpanels>
+</tabbox>
+</window>

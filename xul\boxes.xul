@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Boxes" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<box>
+	<hbox>
+		<box>
+		<description value="Left panellllllllllllllllllll" />
+		</box>
+		<vbox>	
+			<box>
+				<description value=" Top right panel" />
+			</box>
+			<box>
+				<description value=" Bottom right panel" />
+			</box>
+		</vbox>	
+	</hbox>
+</box>	
+</window>

@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<window 
+   id="menu"  
+   title="Menu" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+
+
+<toolbox flex="1">
+    <menubar>
+        <menu label="Files">
+            <menupopup>
+                <menuitem id="openMenu" label="Open" oncommand="openFun();" />
+                <menuitem id="closeMenu" label="Close" />
+                <menuseparator />
+                <menuitem id="exitMenu" label="Quit" />
+            </menupopup>
+        </menu>
+        <menu label="Help" >
+            <menupopup>
+                <menuitem label="Manual" />
+            </menupopup>
+        </menu>
+    </menubar>
+</toolbox>
+
+<script>
+
+  function openFun(event)
+  {
+    alert("Open command...");
+  }
+  
+  function closeFun(event)
+  {
+    alert("Close the document");
+  }
+  
+  function exitFun(event)
+  {
+    alert("Quit the application");
+    //window.close();
+  }
+
+  document.getElementById('exitMenu').addEventListener('click', exitFun, false);
+
+</script>
+
+
+</window>

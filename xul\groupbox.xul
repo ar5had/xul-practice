@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<window 
+	id="hello"  
+	title="Groupbox" 
+	width="400" 
+	height="300" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<groupbox >
+	<caption label="Search" style="background-color:white;" />
+	<vbox>
+		<hbox>
+			<label control="sea" value="Type the query:"/>
+			<textbox id="sea" flex="1"/>
+		</hbox>
+		<hbox>
+			<button label="Searching" width="120" oncommand="searching();"/>
+		</hbox>
+	</vbox>	
+</groupbox>
+
+<script>
+	function searching()
+	{
+		var obj = document.getElementById("sea");
+		alert("Searching " + obj.value);
+	}
+
+</script>
+
+</window>

@@ -1,0 +1,4 @@
+box.classname
+{
+    -moz-binding: url('./xbl.xml#xblname');
+}

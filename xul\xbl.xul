@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xbl.css" type="text/css"?>
+<window
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <box class="classname"/>
+</window>

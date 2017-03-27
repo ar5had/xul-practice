@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <binding id="xblname">
+    <content>
+	<xul:vbox style="margin:8px;">
+		<xul:label value="Type a text:" />
+		<xul:hbox>
+			<xul:textbox flex="8" />
+			<xul:button label="Enter"  oncommand="alert('enter');" />
+			<xul:button label="Clear"  oncommand="alert('clear');" />
+		</xul:hbox>
+	</xul:vbox>
+    </content>
+  </binding>
+</bindings>

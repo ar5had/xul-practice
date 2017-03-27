@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Button" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<box>
+	<button label=" Open" image="open.gif" oncommand="alert('click');" />
+</box>	
+</window>

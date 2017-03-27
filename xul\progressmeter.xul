@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Progressmeter" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<vbox style="padding:16px">
+	<vbox  height="20">
+		<label value="Enter a value:" />
+		<hbox>
+			<textbox id="inp" size="5" value="50" />
+			<button  label="Change" oncommand="setProgress(); " />
+		</hbox>	
+	</vbox>	
+	<spacer />
+	<hbox width="400" >
+		<progressmeter id="MyPM" width="400" value="0" />		
+		<description id="desc" value="0%" />
+	</hbox>	
+</vbox>	
+
+<script>
+
+	var mpm = document.getElementById("MyPM");
+	var inp = document.getElementById("inp");
+	var desc = document.getElementById("desc");
+	
+	function setProgress()
+	{
+		var x = parseInt(inp.value) ;
+		if(x > 100) x = 100;
+		mpm.value = x;
+		desc.value = x + "%";
+	}
+	
+
+</script>
+
+</window>

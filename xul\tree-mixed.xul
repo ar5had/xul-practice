@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Tree" 
+   width="500" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<tree flex="1">
+	<treecols >
+		<treecol primary="true"  label="Nom" width="120" />
+		<treecol  label="City"  width="220" />
+		<treecol label="e-mail"  width="120" />		
+	</treecols>
+	<treechildren>
+		<treeitem container="true" open="true" >
+			<treerow>
+				<treecell label="Bullock" />
+			</treerow>
+			<treechildren>
+				<treeitem container="true" open="true">
+					<treerow>
+						<treecell label="Home" />					
+						<treecell label="New York" />
+						<treecell label="name@domain" />
+					</treerow>
+				</treeitem>
+				<treeitem container="true" open="true">
+					<treerow>
+						<treecell label="Villa" />					
+						<treecell label="Rio" />
+						<treecell label="name@domain" />
+					</treerow>
+				</treeitem>
+			</treechildren>
+		</treeitem>
+		<treeitem container="true" open="true" >
+			<treerow>
+				<treecell label="Johanson" />
+			</treerow>
+			<treechildren>
+				<treeitem container="true" open="true">
+					<treerow>
+						<treecell label="Home" />					
+						<treecell label="Miami" />
+						<treecell label="name@domain" />
+					</treerow>
+				</treeitem>
+			</treechildren>
+		</treeitem>
+	</treechildren>
+</tree>
+
+</window>

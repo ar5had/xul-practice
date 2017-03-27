@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Stack" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+
+	<vbox style="padding:16px">
+		<vbox  height="50">
+			<label value="Enter a value:" />
+			<hbox flex="1" >
+				<textbox id="inp" size="5" value="70" />
+				<button  height="20" label="Change" oncommand="setProgress(); " />
+			</hbox>	
+		</vbox>	
+		<spacer />
+		<hbox width="400" >
+			<stack>
+				<progressmeter id="MyPM" width="400" value="0" />		
+				<description id="desc" value="0%" style="width:400px; text-align:center; font-weight:bold; margin-top:1px" />
+			</stack>
+		</hbox>	
+	</vbox>	
+
+<script>
+
+	var mpm = document.getElementById("MyPM");
+	var inp = document.getElementById("inp");
+	var desc = document.getElementById("desc");
+	
+	function setProgress()
+	{
+		var x = parseInt(inp.value) ;
+		if(x > 100) x = 100;
+		mpm.value = x;
+		desc.value = x + "%";
+	}
+	
+</script>
+
+</window>

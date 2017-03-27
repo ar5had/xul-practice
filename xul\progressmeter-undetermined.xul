@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Undetermined" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<box style="padding:0">
+	<progressmeter mode="undetermined" value="0" /> 
+</box>	
+</window>

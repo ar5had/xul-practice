@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Listbox" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<box>
+	<listbox>
+		<listhead>
+			<listheader label="Name"></listheader>
+			<listheader label="Age"></listheader>
+			<listheader label="City"></listheader>
+		</listhead>
+		<listcols>
+			<listcol flex="1"></listcol>
+			<listcol flex="1"></listcol>
+			<listcol flex="1"></listcol>
+		</listcols>
+		<listitem>
+			<listcell label="Julia"></listcell>
+			<listcell label="19"></listcell>
+			<listcell label="Boston"></listcell>
+		</listitem>
+		<listitem>
+			<listcell label="Sandra"></listcell>
+			<listcell label="25"></listcell>
+			<listcell label="London"></listcell>
+		</listitem>
+		<listitem>
+			<listcell label="Sharon"></listcell>
+			<listcell label="35"></listcell>
+			<listcell label="Paris"></listcell>
+		</listitem>
+	</listbox>
+</box>	
+</window>

@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<window 
+	id="hello"  
+	title="textbox" 
+	width="400" 
+	height="300" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+	<box>
+		<vbox>
+			<label control="tb" value="Enter a text:" />
+			<textbox id="tb" rows="1" size="40" multiline="true"  value="empty" type="timed" timeout="2000"/>
+		</vbox>
+	</box>	
+	<box>
+		<button  label="Display" oncommand="alert(document.getElementById('tb').value);"  />
+	</box>	
+
+</window>

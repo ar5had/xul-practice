@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Orient" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<script>
+function clicking(txt)
+{
+	alert(txt);
+}
+</script>
+
+<box>
+	<button label="Save" image="save.gif" orient="vertical" oncommand="clicking('click');" />
+	<button label="Save" image="save.gif" orient="vertical" oncommand="clicking('click');" />
+</box>	
+</window>

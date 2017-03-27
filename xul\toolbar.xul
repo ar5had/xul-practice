@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<window 
+   id="bar"  
+   title="Toolbar" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<toolbox>
+	<toolbar>
+		<toolbarbutton id="openButton" image="open.gif"  /> 
+		<toolbarbutton id="saveButton" image="save.gif"  /> 
+		<toolbarseparator />
+		<toolbaritem>
+			<description value="Enter a URL " />
+			<textbox>
+			</textbox>
+		</toolbaritem>
+	</toolbar>		
+</toolbox>	
+
+
+<script>
+
+	function openFun(event)
+	{
+		alert("Open the document");
+	}
+	
+	function closeFun(event)
+	{
+		alert("Close the document");
+	}
+	
+	
+	document.getElementById("openButton").addEventListener('command', openFun, true);
+	document.getElementById("saveButton").addEventListener('command', closeFun, true);
+
+</script>
+
+
+
+</window>

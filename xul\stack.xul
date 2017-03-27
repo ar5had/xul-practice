@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Stack" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<box style="padding:32px" >
+	<button>
+		<stack>
+			<description value="Submit" style="color:white; margin-left:1px; margin-top:1px" />
+			<description value="Submit" style="color:gray" />
+		</stack>
+	</button>	
+</box>	
+</window>

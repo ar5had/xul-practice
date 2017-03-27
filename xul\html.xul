@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<window 
+	id="hello"  
+	title="HTML" 
+	width="400" 
+	height="300" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	>
+
+	<vbox>
+		<hbox width="500">
+			<html:input id="hin" type="text" value="Type a text" />
+			<html:input type="button" value="Submit" onclick="pass();"/>
+			<textbox placeholder="Yo"></textbox>
+		</hbox>	
+		
+		<box>
+			<label id="xlab" value="Empty" />
+		</box>
+	</vbox>	
+	
+	<script>
+		function pass()
+		{
+			var source = document.getElementById("hin");
+			var target = document.getElementById("xlab");
+			target.value = source.value;
+		}
+	</script>
+
+</window>

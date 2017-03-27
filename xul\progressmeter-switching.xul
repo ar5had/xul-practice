@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Progressmeter" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<vbox style="padding:16px">
+	<hbox width="400" >
+		<progressmeter mode="determined" id="mpm" value="0" />
+		<button label="Switching" 
+			onmouseover = "setLoading(true)" 
+			onmouseout = "setLoading(false)"
+		/>
+	</hbox>	
+</vbox>	
+
+<script>
+
+	function setLoading(state)
+	{
+		var pm = document.getElementById('mpm');
+		if(state)
+			pm.mode = 'determined';
+		else
+			pm.mode = 'undetermined';
+	}	
+
+</script>
+
+</window>

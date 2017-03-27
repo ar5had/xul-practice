@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Spacer" 
+   width="500" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<box style="background-color:#EEE;">
+	<groupbox min-width="500" style="margin:16px;padding:8px;"  flex="1">
+		<hbox>
+			<textbox />
+			<button label="Submit" />
+			<spacer flex="8" />
+			<button label="Help" flex="2" />
+			</hbox>
+	</groupbox>	
+</box>	
+</window>

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<window id="event" title="Event"  width="400"  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+
+<box>
+	<button id="bx" label="Location"  />
+</box>	
+
+<script>
+function myfunction(event)
+{
+	alert("Coo " + event.clientX + " " + event.clientY );
+}
+
+var x = document.getElementById("bx");
+x.addEventListener("click", myfunction, true);
+
+</script>
+
+</window>

@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<window 
+   id="hello"  
+   title="Vbox" 
+   width="400" 
+  height="300" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+<vbox>
+<description value="Alice in Wonderland" />
+<description value="Oliver Twist" />
+</vbox>
+</window>
